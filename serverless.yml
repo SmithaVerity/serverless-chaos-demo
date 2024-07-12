@@ -1,4 +1,4 @@
-service: serverless-chaos-demo
+service: serverless-chaos
 
 provider:
   name: aws
