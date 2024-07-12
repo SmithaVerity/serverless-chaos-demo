@@ -10,7 +10,7 @@ provider:
     apiGateway: true
     lambda: true
   environment:
-    DYNAMODB_TABLE: ${self:service}-${opt:stage, self:provider.stage}
+    DYNAMODB_TABLE: ${self:service}
   iamRoleStatements:
     - Effect: Allow
       Action:
@@ -41,7 +41,7 @@ provider:
 
 custom:
   client:
-    bucketName: ${file(env.yml):bucketName}
+    bucketName: ${self:service}
 
 functions:
   function1:
