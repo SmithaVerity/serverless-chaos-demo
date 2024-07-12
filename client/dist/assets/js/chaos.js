@@ -7,7 +7,7 @@ function updateFunction1() {
         error: function (jqXHR, textStatus, errorThrown) {
             console.log('jqXHR:');
             console.log(jqXHR);
-            //function11.textContent = 'Function 3 (' + data.Duration + ' ms)';
+            function11.textContent = 'Function 1 (' + data.Duration + ' ms)';
             function11status.textContent = 'Status ' + jqXHR.status + ' ' + textStatus;
             function11content.textContent = errorThrown;
         },
@@ -30,7 +30,7 @@ function updateFunction2() {
         error: function (jqXHR, textStatus, errorThrown) {
             console.log('jqXHR:');
             console.log(jqXHR);
-            //function21.textContent = 'Function 3 (' + data.Duration + ' ms)';
+            //function21.textContent = 'Function 2 (' + data.Duration + ' ms)';
             function21status.textContent = 'Status ' + jqXHR.status + ' ' + textStatus;
             function21content.textContent = errorThrown;
         },
